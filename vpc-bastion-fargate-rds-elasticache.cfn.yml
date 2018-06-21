@@ -489,6 +489,14 @@ Metadata:
           - DatabaseAlarmMinFreeSpaceInBytes
           - DatabaseAlarmSwapUsageInBytes
       - Label:
+          default: ElastiCache
+        Parameters:
+          - CacheEngine
+          - ClusterName
+          - CacheNodeType
+          - CacheNodeCount
+          - AutoMinorVersionUpgrade
+      - Label:
           default: Application Global
         Parameters:
           - AppIngressPort
